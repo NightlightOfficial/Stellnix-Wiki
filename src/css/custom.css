@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #d55beb;
+  --ifm-color-primary-dark: #d74ae7;
+  --ifm-color-primary-darker: #b03abd;
+  --ifm-color-primary-darkest: #861d92;
+  --ifm-color-primary-light: #75b4d8;
+  --ifm-color-primary-lighter: #7fabd6;
+  --ifm-color-primary-lightest: #89aad9;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #d55beb;
+  --ifm-color-primary-dark: #d74ae7;
+  --ifm-color-primary-darker: #b03abd;
+  --ifm-color-primary-darkest: #861d92;
+  --ifm-color-primary-light: #75b4d8;
+  --ifm-color-primary-lighter: #7fabd6;
+  --ifm-color-primary-lightest: #89aad9;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* My custom CSS file, that makes this more nightlight-ish starts here :P */
+
+.hero--primary {
+  --ifm-hero-background-color: #322e3a !important;
+  --ifm-hero-text-color: #ecdcf8 !important;
+}
+
+.navbar {
+  background-color: rgba(28, 28, 28, 0.71) !important;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  display: flex;
+}
+
+.footer {
+  background-color: #322e3a !important;
+}
+
+/* Search button thingy */
+.aa-DetachedSearchButton {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 1px solid #322E3A !important;
+  color: rgba(156, 126, 163, 0.6) !important;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  margin: 0;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  min-width: 200px !important;
+  border-radius: 20px !important;
+}
+
+.aa-DetachedSearchButtonIcon {
+  color: rgba(156, 126, 163, 0.6) !important;
+}
+
+@media (max-width: 767px) {
+  .aa-DetachedSearchButtonPlaceholder {
+    display: none;
+  }
+
+  .aa-DetachedSearchButton {
+    min-width: 10px !important;
+  }
+
+  .navbar-sidebar {
+    height: 100vh;
+  }
+}
+
+/* Sidebar while viewing articles */
+@media (min-width: 997px) {
+  .docSidebarContainer_YfHR {
+    border-right: 1px solid #322E3A !important;
+  }
+}
+
+/* Tables in articles (and in general btw i just misstyped :3) */
+table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #322E3A !important;
+  margin-bottom: 2rem;
+  background-color: #1e1e1e;
+}
+
+thead {
+  background-color: #2b2832 !important;
+}
+
+th {
+  text-align: left;
+  border: 1px solid #322E3a !important;
+}
+
+td {
+  border: 1px solid #322E3a !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #28282A !important;
+}
+/* Navigation on the bottom of articles */
+
+.pagination-nav__link {
+  border: 1px solid #322E3A !important;
+  border-radius: 20px !important;
+}
+
+.pagination-nav__link:hover {
+  border: 1px solid #484355 !important;
+  border-radius: 20px !important;
+}
+
+/* Custom cards for articles */
+.clickable-card {
+  margin-top: 10px;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid #322E3A !important;
+  padding-bottom: 18px;
+  transition: 0.5s;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.clickable-card:hover {
+  background-color: #1f1f22 !important;
+  text-decoration: none;
+  border: 1px solid #484355 !important;
+  transition: 0.5s;
+}
+
+/* Icons for the sidebar items */
+.sidebar-header-getting-started .menu__link--sublist::before {
+  font-family: 'Material Icons';
+  content: 'speed';
+}
+
+.article-icon {
+  vertical-align: middle;
+}
