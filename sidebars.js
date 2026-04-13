@@ -19,10 +19,12 @@ const sidebars = {
   skyblockSidebar: [
     {
       type: 'category',
-      label: 'OVERVIEW',
+      label: 'SkyBlock',
       collapsible: false,
       items: [
-        'minigames/skyblock/getting-started'
+        'minigames/skyblock/getting-started',
+        'minigames/skyblock/ore-generator',
+        'minigames/skyblock/islands'
       ],
     },
   ],
